@@ -1,0 +1,20 @@
+server:
+  port: 8080
+spring:
+  jwt:
+    secret: UFH%ceL8zTP<CA"kqx-QJ62f3R
+  application:
+    name: ms-user
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/db_usermanagement?createDatabaseIfNotExist=true&serverTimezone=UTC
+    username: root
+    password: root
+  flyway:
+    locations: classpath:db/migration
+  jpa:
+    hibernate:
+      ddl-auto: update
+    generate-ddl: true
+    show-sql: true
+    open-in-view: true
