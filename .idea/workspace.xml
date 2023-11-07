@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a61c6f6d-f44c-417b-af97-d09a4faf8fdc" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/ms-notification/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ms-notification/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ms-notification/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ms-notification/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ms-notification/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ms-notification/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ms-notification/src/main/java/com/compassuol/sp/challenge03/MsNotificationApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ms-notification/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ms-notification/src/test/java/com/compassuol/sp/challenge03/Challenge03ApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ms-user/src/main/java/com/compassuol/sp/challenge03/configuration/JwtTokenProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ms-user/src/main/java/com/compassuol/sp/challenge03/configuration/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ms-user/src/main/java/com/compassuol/sp/challenge03/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ms-user/src/main/java/com/compassuol/sp/challenge03/dto/CreateUserDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ms-user/src/main/java/com/compassuol/sp/challenge03/dto/GetUserResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ms-user/src/main/java/com/compassuol/sp/challenge03/dto/LoginRequestDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ms-user/src/main/java/com/compassuol/sp/challenge03/dto/LoginResponseDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ms-user/src/main/java/com/compassuol/sp/challenge03/dto/PasswordChangeRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ms-user/src/main/java/com/compassuol/sp/challenge03/exception/DuplicateEntityException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ms-user/src/main/java/com/compassuol/sp/challenge03/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ms-user/src/main/java/com/compassuol/sp/challenge03/model/UserRole.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ms-user/src/main/java/com/compassuol/sp/challenge03/repository/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ms-user/src/main/java/com/compassuol/sp/challenge03/service/CustomAuthenticationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ms-user/src/main/java/com/compassuol/sp/challenge03/service/CustomUserDetailsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ms-user/src/main/java/com/compassuol/sp/challenge03/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ms-user/src/main/java/com/compassuol/sp/challenge03/validator/UserValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ms-user/src/main/resources/db/migration/V1__Create_User_Table.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ms-user/src/main/resources/static/ms-user.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/compassuol/sp/challenge03/Challenge03Application.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/compassuol/sp/challenge03/Challenge03ApplicationTests.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Swagger" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 2
+}]]></component>
+  <component name="ProjectId" id="2XoNLDgihFL03yVS1KOWHetuzJL" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "dev",
+    "jdk.selected.JAVA_MODULE": "17",
+    "last_opened_file_path": "D:/Projetos/SpringBoot_Challenge03_RyanSousa/ms-user",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Projetos\SpringBoot_Challenge03_RyanSousa" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Projetos\SpringBoot_Challenge03_RyanSousa" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn clean install" />
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.MsUserApplication">
+    <configuration name="MsNotificationApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="ms-notification" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.compassuol.sp.challenge03.MsNotificationApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MsUserApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="ms-user" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.compassuol.sp.challenge03.MsUserApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a61c6f6d-f44c-417b-af97-d09a4faf8fdc" name="Changes" comment="" />
+      <created>1699291415828</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1699291415828</updated>
+      <workItem from="1699291416990" duration="25990000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-core" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.security:spring-security-core" />
+    <option featureType="dependencySupport" implementationName="executable:docker" />
+    <option featureType="dependencySupport" implementationName="java:jakarta.validation:jakarta.validation-api" />
+    <option featureType="dependencySupport" implementationName="java:jakarta.persistence:jakarta.persistence-api" />
+    <option featureType="dependencySupport" implementationName="executable:kubectl" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.data:spring-data-commons" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-messaging" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.boot:spring-boot" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-webmvc" />
+    <option featureType="dependencySupport" implementationName="java:org.projectlombok:lombok" />
+  </component>
+</project>
