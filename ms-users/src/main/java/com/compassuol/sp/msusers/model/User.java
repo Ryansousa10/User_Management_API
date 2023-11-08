@@ -31,7 +31,7 @@ public class User implements UserDetails {
     @Column(unique = true, nullable = false, length = 100)
     private String email;
 
-    @CPF
+    @CPF(message = "O CPF deve ser válido")
     @Column(unique = true, nullable = false, length = 14)
     private String cpf;
 

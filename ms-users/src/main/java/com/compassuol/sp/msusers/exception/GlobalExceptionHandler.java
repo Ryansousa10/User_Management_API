@@ -30,10 +30,40 @@ public class GlobalExceptionHandler {
         return new ResponseEntity<>(errorResponse, status);
     }
 
+    @ExceptionHandler(InvalidNameLengthException.class)
+    public ResponseEntity<ErrorResponse> handleInvalidNameLengthException(InvalidNameLengthException ex, WebRequest request) {
+        HttpStatus status = HttpStatus.BAD_REQUEST;
+        ErrorResponse errorResponse = new ErrorResponse(status, ex.getMessage());
+        return new ResponseEntity<>(errorResponse, status);
+    }
+
+    @ExceptionHandler(InvalidCpfFormatException.class)
+    public ResponseEntity<ErrorResponse> handleInvalidCpfFormatException(InvalidCpfFormatException ex, WebRequest request) {
+        HttpStatus status = HttpStatus.BAD_REQUEST;
+        ErrorResponse errorResponse = new ErrorResponse(status, ex.getMessage());
+        return new ResponseEntity<>(errorResponse, status);
+    }
+
+    @ExceptionHandler(InvalidPasswordLengthException.class)
+    public ResponseEntity<ErrorResponse> handleInvalidPasswordLengthException(InvalidPasswordLengthException ex, WebRequest request) {
+        HttpStatus status = HttpStatus.BAD_REQUEST;
+        ErrorResponse errorResponse = new ErrorResponse(status, ex.getMessage());
+        return new ResponseEntity<>(errorResponse, status);
+    }
+
+    @ExceptionHandler(InvalidUserDTOException.class)
+    public ResponseEntity<Object> handleInvalidUserDTOException(InvalidUserDTOException ex) {
+        String errorMessage = "Validation failed: " + ex.getMessage();
+
+        ErrorResponse errorResponse = new ErrorResponse(HttpStatus.BAD_REQUEST, errorMessage);
+
+        return new ResponseEntity<>(errorResponse, HttpStatus.BAD_REQUEST);
+    }
+
     @ExceptionHandler(Exception.class)
     public ResponseEntity<ErrorResponse> handleGlobalException(Exception ex, WebRequest request) {
         HttpStatus status = HttpStatus.INTERNAL_SERVER_ERROR;
-        ErrorResponse errorResponse = new ErrorResponse(status, "Ocorreu um erro interno no servidor.");
+        ErrorResponse errorResponse = new ErrorResponse(status, "Ocorreu um erro interno no servidor. Verifique suas credenciais e tente novamente.");
         return new ResponseEntity<>(errorResponse, status);
     }
 }
