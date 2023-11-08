@@ -6,6 +6,7 @@ import org.springframework.stereotype.Component;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
+
 @Component
 public class UserMapper {
 
@@ -16,7 +17,11 @@ public class UserMapper {
         userDTO.setLastName(user.getLastName());
         userDTO.setEmail(user.getEmail());
         userDTO.setCpf(user.getCpf());
-        userDTO.setBirthdate(user.getBirthdate().format(DateTimeFormatter.ofPattern("dd/MM/yyyy")));
+
+        // Formatar a data no formato "dd/MM/yyyy"
+        String formattedBirthdate = user.getBirthdate().format(DateTimeFormatter.ofPattern("dd/MM/yyyy"));
+        userDTO.setBirthdate(LocalDate.parse(formattedBirthdate, DateTimeFormatter.ofPattern("dd/MM/yyyy")));
+
         userDTO.setActive(user.isActive());
         return userDTO;
     }
@@ -28,7 +33,7 @@ public class UserMapper {
         user.setLastName(userDTO.getLastName());
         user.setEmail(userDTO.getEmail());
         user.setCpf(userDTO.getCpf());
-        user.setBirthdate(LocalDate.parse(userDTO.getBirthdate(), DateTimeFormatter.ofPattern("dd/MM/yyyy")));
+        user.setBirthdate(userDTO.getBirthdate());
         user.setActive(userDTO.isActive());
         return user;
     }

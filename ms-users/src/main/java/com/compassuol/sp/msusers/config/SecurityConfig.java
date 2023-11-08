@@ -21,8 +21,9 @@ public class SecurityConfig {
                 .csrf(csrf -> csrf.disable())
                 .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
                 .authorizeHttpRequests(authorizeRequests -> authorizeRequests
-                                .requestMatchers(HttpMethod.POST,"/v1/login", "/v1/users").permitAll()
-                                .anyRequest().authenticated()
+                        .requestMatchers(HttpMethod.POST,"/v1/users/**").permitAll()
+                        .requestMatchers("/v1/login/**").permitAll()
+                        .anyRequest().authenticated()
                 )
                 .build();
     }
@@ -32,5 +33,3 @@ public class SecurityConfig {
         return new BCryptPasswordEncoder();
     }
 }
-
-

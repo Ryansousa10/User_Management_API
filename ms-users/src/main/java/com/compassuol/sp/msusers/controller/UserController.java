@@ -2,39 +2,35 @@ package com.compassuol.sp.msusers.controller;
 
 import com.compassuol.sp.msusers.dto.LoginRequestDTO;
 import com.compassuol.sp.msusers.dto.LoginResponseDTO;
-import com.compassuol.sp.msusers.dto.PasswordDTO;
 import com.compassuol.sp.msusers.dto.UserDTO;
 import com.compassuol.sp.msusers.service.UserService;
 import com.compassuol.sp.msusers.util.JwtTokenProvider;
-import jakarta.annotation.security.PermitAll;
 import jakarta.validation.Valid;
-import lombok.AllArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
+import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/v1")
-@AllArgsConstructor
+@RequiredArgsConstructor
 public class UserController {
 
     private final UserService userService;
     private final JwtTokenProvider jwtTokenProvider;
 
-
     @PostMapping("/users")
-    public ResponseEntity<UserDTO> createUser(@Valid @RequestBody UserDTO userDTO, @RequestBody PasswordDTO passwordDTO) {
-        UserDTO createdUser = userService.createUser(userDTO, passwordDTO);
+    public ResponseEntity<UserDTO> createUser(@RequestBody UserDTO userDTO) {
+        UserDTO createdUser = userService.createUser(userDTO);
         return new ResponseEntity<>(createdUser, HttpStatus.CREATED);
     }
 
     @PostMapping("/login")
     public ResponseEntity<LoginResponseDTO> login(@RequestBody LoginRequestDTO loginRequest) {
-        if (userService.isValidUser(loginRequest.getUsername(), loginRequest.getPassword())) {
-            String token = jwtTokenProvider.generateToken(loginRequest.getUsername());
+        if (userService.isValidUser(loginRequest.getEmail(), loginRequest.getPassword())) {
+            String token = jwtTokenProvider.generateToken(loginRequest.getEmail());
             String tokenType = "Bearer";
-            String username = loginRequest.getUsername();
+            String username = loginRequest.getEmail();
 
             LoginResponseDTO responseDTO = new LoginResponseDTO(token, tokenType, username);
 
@@ -65,8 +61,8 @@ public class UserController {
     }
 
     @PutMapping("/users/{id}/password")
-    public ResponseEntity<Void> updatePassword(@PathVariable Long id, @RequestBody PasswordDTO passwordDTO) {
-        userService.updatePassword(id, passwordDTO.getPassword());
+    public ResponseEntity<Void> updatePassword(@PathVariable Long id, @RequestBody UserDTO userDTO) {
+        userService.updatePassword(id, userDTO.getPassword());
         return new ResponseEntity<>(HttpStatus.OK);
     }
 }

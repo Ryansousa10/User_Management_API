@@ -8,7 +8,6 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
 @SpringBootApplication
-@ComponentScan(basePackages = "com.compassuol.sp.msusers.util")
 public class MsUsersApplication {
 
 	public static void main(String[] args) {

@@ -1,14 +1,20 @@
 package com.compassuol.sp.msusers.service;
 
-import com.compassuol.sp.msusers.dto.PasswordDTO;
 import com.compassuol.sp.msusers.dto.UserDTO;
+import com.compassuol.sp.msusers.exception.DuplicateCpfException;
+import com.compassuol.sp.msusers.exception.DuplicateEmailException;
+import com.compassuol.sp.msusers.exception.InvalidActiveValueException;
 import com.compassuol.sp.msusers.model.User;
 import com.compassuol.sp.msusers.repository.UserRepository;
+import jakarta.validation.ConstraintViolation;
+import jakarta.validation.Validator;
+import org.hibernate.validator.internal.constraintvalidators.hv.br.CPFValidator;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import java.util.Optional;
+import java.util.Set;
 
 @Service
 public class UserService {
@@ -22,11 +28,35 @@ public class UserService {
     @Autowired
     private UserMapper userMapper;
 
-    public UserDTO createUser(UserDTO userDTO, PasswordDTO passwordDTO) {
+    @Autowired
+    private Validator validator;
+
+    public UserDTO createUser(UserDTO userDTO) {
+        Set<ConstraintViolation<UserDTO>> dtoViolations = validator.validate(userDTO);
+        if (!dtoViolations.isEmpty()) {
+        }
+
+        Boolean active = userDTO.isActive();
+        if (active != null && !active) {
+            throw new InvalidActiveValueException("O campo 'active' deve conter somente valores 'true' ou 'false'.");
+        }
+
+        if (userRepository.existsByCpf(userDTO.getCpf())) {
+            throw new DuplicateCpfException("CPF duplicado. Um usuário com o mesmo CPF já existe.");
+        }
+
+        if (userRepository.existsByEmail(userDTO.getEmail())) {
+            throw new DuplicateEmailException("Email duplicado. Já existe um usuário com o mesmo email.");
+
+        }
 
         User user = userMapper.mapUserDTOToUser(userDTO);
 
-        user.setPassword(passwordEncoder.encode(passwordDTO.getPassword()));
+        Set<ConstraintViolation<User>> entityViolations = validator.validate(user);
+        if (!entityViolations.isEmpty()) {
+        }
+
+        user.setPassword(passwordEncoder.encode(userDTO.getPassword()));
 
         User savedUser = userRepository.save(user);
 
@@ -39,6 +69,10 @@ public class UserService {
     }
 
     public UserDTO updateUser(Long id, UserDTO userDTO) {
+        Set<ConstraintViolation<UserDTO>> dtoViolations = validator.validate(userDTO);
+        if (!dtoViolations.isEmpty()) {
+        }
+
         Optional<User> userOptional = userRepository.findById(id);
 
         if (userOptional.isPresent()) {
@@ -52,6 +86,10 @@ public class UserService {
             existingUser.setCpf(updatedUser.getCpf());
             existingUser.setBirthdate(updatedUser.getBirthdate());
             existingUser.setActive(updatedUser.isActive());
+
+            Set<ConstraintViolation<User>> entityViolations = validator.validate(existingUser);
+            if (!entityViolations.isEmpty()) {
+            }
 
             User savedUser = userRepository.save(existingUser);
 
@@ -72,8 +110,12 @@ public class UserService {
         }
     }
 
-    public boolean isValidUser(String username, String password) {
-        User user = userRepository.findByEmail(username);
+    private boolean isValidBoolean(String value) {
+        return "true".equals(value) || "false".equals(value);
+    }
+
+    public boolean isValidUser(String email, String password) {
+        User user = (User) userRepository.findByEmail(email);
 
         if (user == null) {
             return false;
