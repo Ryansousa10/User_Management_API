@@ -1,57 +1,135 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="97fa9268-fa67-479a-ad30-a057877e4101" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/compassuol/sp/challenge03/Challenge03Application.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/compassuol/sp/challenge03/Challenge03ApplicationTests.java" beforeDir="false" />
+    <list default="true" id="75b34d1c-88c7-45d4-9337-58fbf1d3e73d" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/SpringBoot_Challenge03_RyanSousa.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d07afbe2-b50c-45ea-9377-868479383bac.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d07afbe2-b50c-45ea-9377-868479383bac/storage_v2/_src_/schema/db_usermanagement.L3h7fw.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d07afbe2-b50c-45ea-9377-868479383bac/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d07afbe2-b50c-45ea-9377-868479383bac/storage_v2/_src_/schema/ms-user.kpf1TA.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d07afbe2-b50c-45ea-9377-868479383bac/storage_v2/_src_/schema/mysql.osA4Bg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d07afbe2-b50c-45ea-9377-868479383bac/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d07afbe2-b50c-45ea-9377-868479383bac/storage_v2/_src_/schema/sys.zb4BAA.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/b/3b43942b3a4405dca45e0b1a65d0d89ce116b699" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/c/ccc2462935eddcae9c7b6126a0bfba09e0d76040" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/3/b/3b43942b3a4405dca45e0b1a65d0d89ce116b699" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/c/c/ccc2462935eddcae9c7b6126a0bfba09e0d76040" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-notification/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ms-notification/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-notification/src/main/java/com/compassuol/sp/challenge03/MsNotificationApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-notification/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ms-notification/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-users/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/ms-users/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-users/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ms-users/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-users/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ms-users/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-users/src/main/java/com/compassuol/sp/msusers/MsUsersApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-users/src/main/java/com/compassuol/sp/msusers/MsUsersApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-users/src/main/java/com/compassuol/sp/msusers/config/JacksonConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-users/src/main/java/com/compassuol/sp/msusers/config/JacksonConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-users/src/main/java/com/compassuol/sp/msusers/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-users/src/main/java/com/compassuol/sp/msusers/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-users/src/main/java/com/compassuol/sp/msusers/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-users/src/main/java/com/compassuol/sp/msusers/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-users/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ms-users/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-users/src/test/java/com/compassuol/sp/msusers/MsUsersApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-users/src/test/java/com/compassuol/sp/msusers/MsUsersApplicationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="MarkdownSettingsMigration">
-    <option name="stateVersion" value="1" />
-  </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 2
-}]]></component>
-  <component name="ProjectId" id="2XqgjsVTTmeeZHiUbv0nsFTJ0v8" />
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="2Xwtqbxy5fZ3kMHjIfVEvmt2jnA" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
     "last_opened_file_path": "D:/Projetos/SpringBoot_Challenge03_RyanSousa/ms-users",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql",
+      "mongo"
+    ]
   }
 }]]></component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn clean install" />
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.MsNotificationApplication">
+    <configuration name="MsNotificationApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="ms-notification" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.compassuol.sp.msnotification.MsNotificationApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MsUsersApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="ms-users" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.compassuol.sp.msusers.MsUsersApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="97fa9268-fa67-479a-ad30-a057877e4101" name="Changes" comment="" />
-      <created>1699362163654</created>
+      <changelist id="75b34d1c-88c7-45d4-9337-58fbf1d3e73d" name="Changes" comment="" />
+      <created>1699552162789</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1699362163654</updated>
-      <workItem from="1699362165181" duration="21000" />
+      <updated>1699552162789</updated>
+      <workItem from="1699552163792" duration="1884000" />
+      <workItem from="1699554117763" duration="12384000" />
+      <workItem from="1699566833566" duration="122000" />
+      <workItem from="1699566962166" duration="20000" />
+      <workItem from="1699567005526" duration="119000" />
+      <workItem from="1699567213993" duration="550000" />
     </task>
     <servers />
   </component>

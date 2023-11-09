@@ -1,1 +1,21 @@
+server:
+  port: 8000
 
+spring:
+  application:
+    name: ms-notifications
+
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: db_notification
+
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+    virtual-host: /
+    template:
+      default-receive-queue: notification

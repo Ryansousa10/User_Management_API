@@ -5,12 +5,15 @@ import com.compassuol.sp.msusers.dto.LoginResponseDTO;
 import com.compassuol.sp.msusers.dto.UserDTO;
 import com.compassuol.sp.msusers.exception.*;
 import com.compassuol.sp.msusers.model.User;
+import com.compassuol.sp.msusers.payload.NotificationPayload;
 import com.compassuol.sp.msusers.repository.UserRepository;
 import com.compassuol.sp.msusers.util.JwtTokenProvider;
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import jakarta.validation.ConstraintViolation;
 import jakarta.validation.Validator;
 import lombok.AllArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -18,6 +21,7 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
+import java.time.Instant;
 import java.util.Optional;
 import java.util.Set;
 import java.util.regex.Pattern;
@@ -26,21 +30,13 @@ import java.util.regex.Pattern;
 @AllArgsConstructor
 public class UserService {
 
-    @Autowired
     private UserRepository userRepository;
-
-    @Autowired
     private PasswordEncoder passwordEncoder;
-
-    @Autowired
     private UserMapper userMapper;
-
-    @Autowired
     private Validator validator;
-
-    @Autowired
+    private ObjectMapper objectMapper;
     private final JwtTokenProvider jwtTokenProvider;
-
+    private final RabbitTemplate rabbitTemplate;
     public UserDTO createUser(UserDTO userDTO) {
         validateUserDTO(userDTO);
         validateNameLength(userDTO.getFirstName(), "firstName");
@@ -61,6 +57,8 @@ public class UserService {
         user.setPassword(passwordEncoder.encode(userDTO.getPassword()));
 
         User savedUser = userRepository.save(user);
+
+        sendNotification(userDTO.getEmail(), "CREATE");
 
         return userMapper.mapUserToUserDTO(savedUser);
     }
@@ -95,6 +93,8 @@ public class UserService {
 
             User savedUser = userRepository.save(existingUser);
 
+            sendNotification(userDTO.getEmail(), "UPDATE");
+
             return userMapper.mapUserToUserDTO(savedUser);
         } else {
             return null;
@@ -108,7 +108,13 @@ public class UserService {
             User user = userOptional.get();
 
             user.setPassword(passwordEncoder.encode(newPassword));
-            userRepository.save(user);
+
+            User savedUser = userRepository.save(user);
+
+            sendNotification(user.getEmail(), "UPDATE_PASSWORD");
+
+            if (!user.getPassword().equals(savedUser.getPassword())) {
+            }
         }
     }
 
@@ -119,6 +125,9 @@ public class UserService {
             String tokenType = "Bearer";
             String username = loginRequest.getEmail();
             LoginResponseDTO responseDTO = new LoginResponseDTO(token, tokenType, username);
+
+            sendNotification(loginRequest.getEmail(), "LOGIN");
+
             return ResponseEntity.ok(responseDTO);
         } catch (UsernameNotFoundException e) {
             return ResponseEntity.status(HttpStatus.UNAUTHORIZED).build();
@@ -187,4 +196,20 @@ public class UserService {
 
         return Pattern.matches("\\d{3}\\.\\d{3}\\.\\d{3}-\\d{2}", cpf);
     }
+
+    private void sendNotification(String email, String event) {
+        try {
+            String iso8601Date = Instant.now().toString();
+            NotificationPayload payload = new NotificationPayload(email, event, iso8601Date);
+
+            String jsonPayload = objectMapper.writeValueAsString(payload);
+
+            rabbitTemplate.convertAndSend("notification_exchange", "notification_routing_key", jsonPayload);
+        } catch (JsonProcessingException e) {
+            throw new NotificationConversionException("Erro ao converter o payload para JSON", e);
+        } catch (Exception e) {
+            throw new NotificationException("Erro ao enviar notificação", e);
+        }
+    }
+
 }
