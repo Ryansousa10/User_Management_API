@@ -1,0 +1,184 @@
+swagger: "2.0"
+info:
+  title: Documentação da API de Usuários
+  description: Documentação da API de gerenciamento de usuários
+  version: 1.0.0
+paths:
+  /v1/users:
+    post:
+      tags:
+        - User
+      summary: Cria um novo usuário
+      description: Cria um novo usuário com base nos dados fornecidos.
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - in: body
+          name: user
+          description: Dados do usuário a ser criado
+          required: true
+          schema:
+            $ref: "#/definitions/UserDTO"
+      responses:
+        201:
+          description: Usuário criado com sucesso
+          schema:
+            $ref: "#/definitions/UserDTO"
+        400:
+          description: Requisição inválida
+        500:
+          description: Erro interno do servidor
+  /v1/login:
+    post:
+      tags:
+        - User
+      summary: Autentica um usuário
+      description: Autentica um usuário com base nas credenciais fornecidas.
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - in: body
+          name: loginRequest
+          description: Credenciais de login
+          required: true
+          schema:
+            $ref: "#/definitions/LoginRequestDTO"
+      responses:
+        200:
+          description: Login bem-sucedido
+          schema:
+            $ref: "#/definitions/LoginResponseDTO"
+        401:
+          description: Credenciais inválidas
+        500:
+          description: Erro interno do servidor
+  /v1/users/{id}:
+    get:
+      tags:
+        - User
+      summary: Obtém informações de um usuário
+      description: Obtém informações de um usuário com base no ID fornecido.
+      produces:
+        - application/json
+      parameters:
+        - in: path
+          name: id
+          description: ID do usuário
+          required: true
+          type: integer
+          format: int64
+      responses:
+        200:
+          description: Usuário encontrado
+          schema:
+            $ref: "#/definitions/UserDTO"
+        404:
+          description: Usuário não encontrado
+        500:
+          description: Erro interno do servidor
+    put:
+      tags:
+        - User
+      summary: Atualiza informações de um usuário
+      description: Atualiza informações de um usuário com base no ID fornecido.
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - in: path
+          name: id
+          description: ID do usuário
+          required: true
+          type: integer
+          format: int64
+        - in: body
+          name: user
+          description: Novos dados do usuário
+          required: true
+          schema:
+            $ref: "#/definitions/UserDTO"
+      responses:
+        200:
+          description: Usuário atualizado com sucesso
+          schema:
+            $ref: "#/definitions/UserDTO"
+        404:
+          description: Usuário não encontrado
+        500:
+          description: Erro interno do servidor
+  /v1/users/{id}/password:
+    put:
+      tags:
+        - User
+      summary: Atualiza a senha de um usuário
+      description: Atualiza a senha de um usuário com base no ID fornecido.
+      consumes:
+        - application/json
+      parameters:
+        - in: path
+          name: id
+          description: ID do usuário
+          required: true
+          type: integer
+          format: int64
+        - in: body
+          name: user
+          description: Nova senha do usuário
+          required: true
+          schema:
+            $ref: "#/definitions/UserDTO"
+      responses:
+        200:
+          description: Senha atualizada com sucesso
+        500:
+          description: Erro interno do servidor
+definitions:
+  UserDTO:
+    type: object
+    properties:
+      firstName:
+        type: string
+        minLength: 3
+        maxLength: 50
+      lastName:
+        type: string
+        minLength: 3
+        maxLength: 50
+      email:
+        type: string
+        format: email
+        maxLength: 100
+      cpf:
+        type: string
+        maxLength: 14
+      birthdate:
+        type: string
+        format: date
+      password:
+        type: string
+        minLength: 6
+  LoginRequestDTO:
+    type: object
+    properties:
+      email:
+        type: string
+        format: email
+      password:
+        type: string
+        minLength: 6
+  LoginResponseDTO:
+    type: object
+    properties:
+      token:
+        type: string
+  PasswordUpdateDTO:
+    type: object
+    properties:
+      password:
+        type: string
+        minLength: 6

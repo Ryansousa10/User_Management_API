@@ -4,7 +4,6 @@ import com.compassuol.sp.msusers.dto.LoginRequestDTO;
 import com.compassuol.sp.msusers.dto.LoginResponseDTO;
 import com.compassuol.sp.msusers.dto.UserDTO;
 import com.compassuol.sp.msusers.service.UserService;
-import com.compassuol.sp.msusers.util.JwtTokenProvider;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
@@ -17,7 +16,6 @@ import org.springframework.web.bind.annotation.*;
 public class UserController {
 
     private final UserService userService;
-    private final JwtTokenProvider jwtTokenProvider;
 
     @PostMapping("/users")
     public ResponseEntity<UserDTO> createUser(@RequestBody UserDTO userDTO) {
@@ -27,37 +25,21 @@ public class UserController {
 
     @PostMapping("/login")
     public ResponseEntity<LoginResponseDTO> login(@RequestBody LoginRequestDTO loginRequest) {
-        if (userService.isValidUser(loginRequest.getEmail(), loginRequest.getPassword())) {
-            String token = jwtTokenProvider.generateToken(loginRequest.getEmail());
-            String tokenType = "Bearer";
-            String username = loginRequest.getEmail();
-
-            LoginResponseDTO responseDTO = new LoginResponseDTO(token, tokenType, username);
-
-            return ResponseEntity.ok(responseDTO);
-        } else {
-            return ResponseEntity.status(HttpStatus.UNAUTHORIZED).build();
-        }
+        return userService.login(loginRequest);
     }
 
     @GetMapping("/users/{id}")
     public ResponseEntity<UserDTO> getUser(@PathVariable Long id) {
         UserDTO userDTO = userService.getUserById(id);
-        if (userDTO != null) {
-            return new ResponseEntity<>(userDTO, HttpStatus.OK);
-        } else {
-            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
-        }
+        return (userDTO != null) ? ResponseEntity.ok(userDTO) : ResponseEntity.notFound().build();
     }
 
     @PutMapping("/users/{id}")
     public ResponseEntity<UserDTO> updateUser(@PathVariable Long id, @Valid @RequestBody UserDTO userDTO) {
         UserDTO updatedUser = userService.updateUser(id, userDTO);
-        if (updatedUser != null) {
-            return new ResponseEntity<>(updatedUser, HttpStatus.OK);
-        } else {
-            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
-        }
+        return updatedUser != null
+                ? new ResponseEntity<>(updatedUser, HttpStatus.OK)
+                : new ResponseEntity<>(HttpStatus.NOT_FOUND);
     }
 
     @PutMapping("/users/{id}/password")

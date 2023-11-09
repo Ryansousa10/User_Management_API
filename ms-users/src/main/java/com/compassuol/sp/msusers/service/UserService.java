@@ -1,22 +1,29 @@
 package com.compassuol.sp.msusers.service;
 
+import com.compassuol.sp.msusers.dto.LoginRequestDTO;
+import com.compassuol.sp.msusers.dto.LoginResponseDTO;
 import com.compassuol.sp.msusers.dto.UserDTO;
 import com.compassuol.sp.msusers.exception.*;
 import com.compassuol.sp.msusers.model.User;
 import com.compassuol.sp.msusers.repository.UserRepository;
+import com.compassuol.sp.msusers.util.JwtTokenProvider;
 import jakarta.validation.ConstraintViolation;
 import jakarta.validation.Validator;
+import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
-import java.util.List;
 import java.util.Optional;
 import java.util.Set;
 import java.util.regex.Pattern;
-import java.util.stream.Collectors;
 
 @Service
+@AllArgsConstructor
 public class UserService {
 
     @Autowired
@@ -31,13 +38,22 @@ public class UserService {
     @Autowired
     private Validator validator;
 
+    @Autowired
+    private final JwtTokenProvider jwtTokenProvider;
+
     public UserDTO createUser(UserDTO userDTO) {
         validateUserDTO(userDTO);
         validateNameLength(userDTO.getFirstName(), "firstName");
         validateNameLength(userDTO.getLastName(), "lastName");
         validatePasswordLength(userDTO.getPassword());
         validateUniqueCpf(userDTO.getCpf());
-        validateCpfFormat(userDTO.getCpf());
+
+        if (userDTO.getCpf() != null) {
+            validateCpfFormat(userDTO.getCpf());
+        } else {
+            throw new InvalidCpfFormatException("CPF inválido");
+        }
+
         validateUniqueEmail(userDTO.getEmail());
         validateActiveValue(userDTO.isActive());
 
@@ -96,19 +112,29 @@ public class UserService {
         }
     }
 
-    public boolean isValidUser(String email, String password) {
-        User user = (User) userRepository.findByEmail(email);
-
-        if (user == null) {
-            return false;
+    public ResponseEntity<LoginResponseDTO> login(LoginRequestDTO loginRequest) {
+        try {
+            UserDetails user = isValidUser(loginRequest.getEmail(), loginRequest.getPassword());
+            var token = jwtTokenProvider.generateToken(loginRequest.getEmail());
+            String tokenType = "Bearer";
+            String username = loginRequest.getEmail();
+            LoginResponseDTO responseDTO = new LoginResponseDTO(token, tokenType, username);
+            return ResponseEntity.ok(responseDTO);
+        } catch (UsernameNotFoundException e) {
+            return ResponseEntity.status(HttpStatus.UNAUTHORIZED).build();
         }
-
-        if (passwordEncoder.matches(password, user.getPassword())) {
-            return true;
-        }
-
-        return false;
     }
+
+    public UserDetails isValidUser(String email, String password) {
+        UserDetails user = userRepository.findByEmail(email);
+
+        if (user != null && passwordEncoder.matches(password, user.getPassword())) {
+            return user;
+        } else {
+            throw new UsernameNotFoundException("Usuário não encontrado ou senha incorreta");
+        }
+    }
+
     public void validateUserDTO(UserDTO userDTO) {
         Set<ConstraintViolation<UserDTO>> dtoViolations = validator.validate(userDTO);
         if (!dtoViolations.isEmpty()) {
@@ -116,37 +142,37 @@ public class UserService {
         }
     }
 
-    private void validateNameLength(String name, String fieldName) {
+    void validateNameLength(String name, String fieldName) {
         if (name != null && name.length() < 3) {
             throw new InvalidNameLengthException("O campo '" + fieldName + "' deve ter pelo menos 3 caracteres.");
         }
     }
 
-    private void validatePasswordLength(String password) {
+    void validatePasswordLength(String password) {
         if (password != null && password.length() < 6) {
             throw new InvalidPasswordLengthException("A senha deve ter no mínimo 6 caracteres.");
         }
     }
 
-    private void validateUniqueCpf(String cpf) {
+    void validateUniqueCpf(String cpf) {
         if (userRepository.existsByCpf(cpf)) {
             throw new DuplicateCpfException("CPF duplicado. Um usuário com o mesmo CPF já existe.");
         }
     }
 
-    private void validateCpfFormat(String cpf) {
+    void validateCpfFormat(String cpf) {
         if (!isCPFInFormat(cpf)) {
             throw new InvalidCpfFormatException("O CPF não está no formato correto (000.000.000-00).");
         }
     }
 
-    private void validateUniqueEmail(String email) {
+    void validateUniqueEmail(String email) {
         if (userRepository.existsByEmail(email)) {
             throw new DuplicateEmailException("Email duplicado. Já existe um usuário com o mesmo email.");
         }
     }
 
-    private void validateActiveValue(Boolean active) {
+    void validateActiveValue(Boolean active) {
         if (active == null || (active != true && active != false)) {
             throw new InvalidActiveValueException("O campo 'active' deve conter somente valores 'true' ou 'false'.");
         }
