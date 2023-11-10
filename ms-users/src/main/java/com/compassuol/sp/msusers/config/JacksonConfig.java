@@ -8,6 +8,7 @@ import java.text.SimpleDateFormat;
 
 @Configuration
 public class JacksonConfig {
+
     @Bean
     public Jackson2ObjectMapperBuilderCustomizer jsonCustomizer() {
         return builder -> builder.dateFormat(new SimpleDateFormat("dd/MM/yyyy"));
