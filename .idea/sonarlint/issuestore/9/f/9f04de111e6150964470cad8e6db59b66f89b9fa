@@ -1,0 +1,18 @@
+
+W
+java:S22098"5Change this instance-reference to a static reference.(ùşÍòøÿÿÿÿ8Ïá°Ñ»1
+J	java:S108I")Either remove or fill this block of code.(Ø„ğÜşÿÿÿÿ8Îá°Ñ»1
+R
+java:S2209Q"5Change this instance-reference to a static reference.(äøºã8‚Ò»1
+E	java:S108[")Either remove or fill this block of code.(ÖÉäÃ8Ïá°Ñ»1
+J	java:S108t")Either remove or fill this block of code.(¾“¥Œûÿÿÿÿ8Í´´Ñ»1
+Z
+java:S1854{"8Remove this useless assignment to local variable "user".(¿ÚÜ¦ùÿÿÿÿ8Í´´Ñ»1
+K
+java:S1481{")Remove this unused "user" local variable.(¿ÚÜ¦ùÿÿÿÿ8Î´´Ñ»1
+E
+java:S1125¹"'Remove the unnecessary boolean literal.(ôØˆŒ8Ğ´´Ñ»1
+E
+java:S1125¹"'Remove the unnecessary boolean literal.(ôØˆŒ8Ğ´´Ñ»1
+`
+java:S6353¿"=Use concise character class syntax '\\D' instead of '[^0-9]'.(À„Êüÿÿÿÿ8Ò´´Ñ»1

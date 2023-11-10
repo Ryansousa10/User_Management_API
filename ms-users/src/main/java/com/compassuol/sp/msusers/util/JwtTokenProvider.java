@@ -46,17 +46,4 @@ public class JwtTokenProvider {
         Date expirationDate = JWT.decode(token).getExpiresAt();
         return expirationDate != null && expirationDate.before(new Date());
     }
-
-    public String validateToken(String token) {
-        try{
-            Algorithm algorithm = Algorithm.HMAC256(secret);
-            return JWT.require(algorithm)
-                    .withIssuer("auth-api")
-                    .build()
-                    .verify(token)
-                    .getSubject();
-        } catch (JWTVerificationException exception){
-            return "";
-        }
-    }
 }

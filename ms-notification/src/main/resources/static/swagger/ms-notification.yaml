@@ -1,0 +1,49 @@
+swagger: "2.0"
+info:
+  title: Documentação da API de Notificações
+  description: Documentação da API de notificações
+  version: 1.0.0
+paths:
+  /v1/notifications:
+    post:
+      tags:
+        - Notification
+      summary: Recebe e armazena uma notificação
+      description: Recebe uma notificação enviada pelo ms-users e a armazena no banco de dados.
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - in: body
+          name: notification
+          description: Dados da notificação
+          required: true
+          schema:
+            $ref: "#/definitions/NotificationDTO"
+      responses:
+        201:
+          description: Notificação armazenada com sucesso
+          schema:
+            $ref: "#/definitions/NotificationDTO"
+        400:
+          description: Requisição inválida
+        500:
+          description: Erro interno do servidor
+
+definitions:
+  NotificationDTO:
+    type: object
+    properties:
+      email:
+        type: string
+        format: email
+      event:
+        type: string
+        minLength: 3
+        maxLength: 50
+      date:
+        type: string
+        format: date-time
+      message:
+        type: string

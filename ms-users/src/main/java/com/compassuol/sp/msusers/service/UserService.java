@@ -37,6 +37,7 @@ public class UserService {
     private ObjectMapper objectMapper;
     private final JwtTokenProvider jwtTokenProvider;
     private final RabbitTemplate rabbitTemplate;
+
     public UserDTO createUser(UserDTO userDTO) {
         validateUserDTO(userDTO);
         validateNameLength(userDTO.getFirstName(), "firstName");

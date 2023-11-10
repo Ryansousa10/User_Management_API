@@ -264,4 +264,3 @@ public class UserServiceTest {
         assertFalse(UserService.isCPFInFormat(invalidCpf));
     }
 }
-

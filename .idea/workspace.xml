@@ -5,42 +5,78 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="75b34d1c-88c7-45d4-9337-58fbf1d3e73d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/SpringBoot_Challenge03_RyanSousa.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d07afbe2-b50c-45ea-9377-868479383bac.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d07afbe2-b50c-45ea-9377-868479383bac/storage_v2/_src_/schema/db_usermanagement.L3h7fw.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d07afbe2-b50c-45ea-9377-868479383bac/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d07afbe2-b50c-45ea-9377-868479383bac/storage_v2/_src_/schema/ms-user.kpf1TA.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d07afbe2-b50c-45ea-9377-868479383bac/storage_v2/_src_/schema/mysql.osA4Bg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d07afbe2-b50c-45ea-9377-868479383bac/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d07afbe2-b50c-45ea-9377-868479383bac/storage_v2/_src_/schema/sys.zb4BAA.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/b/3b43942b3a4405dca45e0b1a65d0d89ce116b699" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/c/ccc2462935eddcae9c7b6126a0bfba09e0d76040" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/3/b/3b43942b3a4405dca45e0b1a65d0d89ce116b699" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/c/c/ccc2462935eddcae9c7b6126a0bfba09e0d76040" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/4/04afba69b6daf8dba6362efb05084fc830242c85" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/8/187765def74c3f3201c1da8b471228fe97e0b20d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/a/1a80b915e81d533fd956bcd426183ab2dee90711" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/1/21d806ced5e5b1ccf5c5703fb774249fd14dfb17" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/a/3ac212c26117573c21fa783e03cd35c91c146689" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/7/57c8dea69dd26e99877cd9bd302066bd651dcebe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/a/5a25736bcd8f536c41030b0ebb7ac7c20be3a2c3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/0/709ac0a313cef9e612d3cda850e5492d552ffaee" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/1/71b773f9f487450365c6f574bc8fc4d0791455fd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/1/91aee88d0ce43751478c8ecc26d9d577baefdf1d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/f/9f04de111e6150964470cad8e6db59b66f89b9fa" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/e/aeba97308def960e4b23d8176fcf0cd3a610fadc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/5/b5d54e95ef6fb428161a4b85be7cc26451f7da3e" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/0/c0d83bf91f2849c4a741d5db27b8ecb88d519cb2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/2/c289c733fd297db1d3ae478dd46833d8c83f0763" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/c/ccc2462935eddcae9c7b6126a0bfba09e0d76040" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/5/d5913b49abb0b03670f51005efc22fa27c44d5b4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/6/d68784251e377de0492affd4d4e2f2f60f58d23b" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/9/d9021468d703f6e0bcfbe6f59e185df7faeaf213" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/0/e0f46ba961883cadf8b4606900036a7d5085d2af" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/3/e32b242f898b43586b3e473d6b18a78c6802735c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/1/f15092c3e90d697efe3354dbad4468764db51577" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/0/4/04afba69b6daf8dba6362efb05084fc830242c85" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/1/8/187765def74c3f3201c1da8b471228fe97e0b20d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/1/a/1a80b915e81d533fd956bcd426183ab2dee90711" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/2/1/21d806ced5e5b1ccf5c5703fb774249fd14dfb17" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/3/a/3ac212c26117573c21fa783e03cd35c91c146689" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/5/7/57c8dea69dd26e99877cd9bd302066bd651dcebe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/5/a/5a25736bcd8f536c41030b0ebb7ac7c20be3a2c3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/7/0/709ac0a313cef9e612d3cda850e5492d552ffaee" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/7/1/71b773f9f487450365c6f574bc8fc4d0791455fd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/9/1/91aee88d0ce43751478c8ecc26d9d577baefdf1d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/9/f/9f04de111e6150964470cad8e6db59b66f89b9fa" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/a/e/aeba97308def960e4b23d8176fcf0cd3a610fadc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/b/5/b5d54e95ef6fb428161a4b85be7cc26451f7da3e" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/c/0/c0d83bf91f2849c4a741d5db27b8ecb88d519cb2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/c/2/c289c733fd297db1d3ae478dd46833d8c83f0763" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/c/c/ccc2462935eddcae9c7b6126a0bfba09e0d76040" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/d/5/d5913b49abb0b03670f51005efc22fa27c44d5b4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/d/6/d68784251e377de0492affd4d4e2f2f60f58d23b" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/d/9/d9021468d703f6e0bcfbe6f59e185df7faeaf213" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/e/0/e0f46ba961883cadf8b4606900036a7d5085d2af" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/e/3/e32b242f898b43586b3e473d6b18a78c6802735c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/f/1/f15092c3e90d697efe3354dbad4468764db51577" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ms-notification/src/main/resources/static/swagger/ms-notification.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ms-notification/src/test/java/com/compassuol/sp/msnotification/model/NotificationTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ms-notification/src/test/java/com/compassuol/sp/msnotification/service/NotificationConsumerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ms-notification/src/test/java/com/compassuol/sp/msnotification/service/NotificationServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ms-users/src/test/java/com/compassuol/sp/msusers/config/SecurityFilterTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ms-users/src/test/java/com/compassuol/sp/msusers/payload/NotificationPayloadTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ms-users/src/test/java/com/compassuol/sp/msusers/service/AuthorizationServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ms-users/src/test/java/com/compassuol/sp/msusers/service/NotificationProducerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ms-users/src/test/java/com/compassuol/sp/msusers/service/UserMapperTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ms-notification/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ms-notification/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-notification/src/main/java/com/compassuol/sp/challenge03/MsNotificationApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-notification/src/main/java/com/compassuol/sp/msnotification/MsNotificationApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-notification/src/main/java/com/compassuol/sp/msnotification/MsNotificationApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-notification/src/main/java/com/compassuol/sp/msnotification/payload/NotificationPayload.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-notification/src/main/java/com/compassuol/sp/msnotification/payload/NotificationPayload.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-notification/src/main/java/com/compassuol/sp/msnotification/service/NotificationConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-notification/src/main/java/com/compassuol/sp/msnotification/service/NotificationConsumer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ms-notification/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ms-notification/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-users/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/ms-users/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-users/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ms-users/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-users/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ms-users/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-users/src/main/java/com/compassuol/sp/msusers/MsUsersApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-users/src/main/java/com/compassuol/sp/msusers/MsUsersApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-users/src/main/java/com/compassuol/sp/msusers/config/JacksonConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-users/src/main/java/com/compassuol/sp/msusers/config/JacksonConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-users/src/main/java/com/compassuol/sp/msusers/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-users/src/main/java/com/compassuol/sp/msusers/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-notification/src/test/java/com/compassuol/sp/challenge03/Challenge03ApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-notification/src/test/java/com/compassuol/sp/msnotification/Challenge03ApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-users/src/main/java/com/compassuol/sp/msusers/service/NotificationProducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-users/src/main/java/com/compassuol/sp/msusers/service/NotificationProducer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ms-users/src/main/java/com/compassuol/sp/msusers/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-users/src/main/java/com/compassuol/sp/msusers/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-users/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ms-users/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-users/src/test/java/com/compassuol/sp/msusers/MsUsersApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-users/src/test/java/com/compassuol/sp/msusers/MsUsersApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-users/src/main/java/com/compassuol/sp/msusers/util/JwtTokenProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-users/src/main/java/com/compassuol/sp/msusers/util/JwtTokenProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-users/src/test/java/com/compassuol/sp/msusers/service/UserServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-users/src/test/java/com/compassuol/sp/msusers/service/UserServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +86,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Swagger" />
         <option value="Class" />
       </list>
     </option>
@@ -65,40 +102,108 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "D:/Projetos/SpringBoot_Challenge03_RyanSousa/ms-users",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;dev&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Projetos/SpringBoot_Challenge03_RyanSousa/ms-notification/src/main/resources&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql",
-      "mongo"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;,
+      &quot;mongo&quot;
     ]
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Projetos\SpringBoot_Challenge03_RyanSousa\ms-notification\src\main\resources" />
+    </key>
+  </component>
   <component name="RunAnythingCache">
     <option name="myCommands">
+      <command value="mvn clean" />
       <command value="mvn clean install" />
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.MsNotificationApplication">
+  <component name="RunManager" selected="JUnit.msusers in ms-users">
+    <configuration name="MsUsersApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ms-users" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.compassuol.sp.msusers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.compassuol.sp.msusers" />
+      <option name="MAIN_CLASS_NAME" value="com.compassuol.sp.msusers.MsUsersApplicationTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SecurityFilterTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ms-users" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.compassuol.sp.msusers.config.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.compassuol.sp.msusers.config" />
+      <option name="MAIN_CLASS_NAME" value="com.compassuol.sp.msusers.config.SecurityFilterTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ms-users" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.compassuol.sp.msusers.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.compassuol.sp.msusers.service" />
+      <option name="MAIN_CLASS_NAME" value="com.compassuol.sp.msusers.service.UserServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="msnotification in ms-notification" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ms-notification" />
+      <option name="TEST_OBJECT" value="directory" />
+      <dir value="$PROJECT_DIR$/ms-notification/src/test/java/com/compassuol/sp/msnotification" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="msusers in ms-users" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ms-users" />
+      <option name="TEST_OBJECT" value="directory" />
+      <dir value="$PROJECT_DIR$/ms-users/src/test/java/com/compassuol/sp/msusers" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MsNotificationApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <module name="ms-notification" />
@@ -115,6 +220,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.msusers in ms-users" />
+        <item itemvalue="JUnit.msnotification in ms-notification" />
+        <item itemvalue="JUnit.UserServiceTest" />
+        <item itemvalue="JUnit.MsUsersApplicationTests" />
+        <item itemvalue="JUnit.SecurityFilterTest" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -129,11 +243,62 @@
       <workItem from="1699566833566" duration="122000" />
       <workItem from="1699566962166" duration="20000" />
       <workItem from="1699567005526" duration="119000" />
-      <workItem from="1699567213993" duration="550000" />
+      <workItem from="1699567213993" duration="3577000" />
+      <workItem from="1699570817631" duration="253000" />
+      <workItem from="1699571080008" duration="48000" />
+      <workItem from="1699571386592" duration="3555000" />
+      <workItem from="1699577880783" duration="96000" />
+      <workItem from="1699620129897" duration="17164000" />
+      <workItem from="1699638837882" duration="1262000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="org.springframework.beans.factory.UnsatisfiedDependencyException" package="org.springframework.beans.factory" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/SpringBoot_Challenge03_RyanSousa$UserMapperTest.ic" NAME="UserMapperTest Coverage Results" MODIFIED="1699633153031" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.compassuol.sp.msusers.service.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/SpringBoot_Challenge03_RyanSousa$Challenge03ApplicationTests.ic" NAME="Challenge03ApplicationTests Coverage Results" MODIFIED="1699568297274" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.compassuol.sp.msnotification.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/SpringBoot_Challenge03_RyanSousa$NotificationConsumerTest.ic" NAME="NotificationConsumerTest Coverage Results" MODIFIED="1699625574597" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.compassuol.sp.msnotification.service.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/SpringBoot_Challenge03_RyanSousa$NotificationPayloadTest.ic" NAME="NotificationPayloadTest Coverage Results" MODIFIED="1699638123264" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.compassuol.sp.msusers.payload.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/SpringBoot_Challenge03_RyanSousa$DatabaseInitializerTest.ic" NAME="DatabaseInitializerTest Coverage Results" MODIFIED="1699626027165" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.compassuol.sp.msnotification.config.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/SpringBoot_Challenge03_RyanSousa$msusers_in_ms_users.ic" NAME="msusers in ms-users Coverage Results" MODIFIED="1699639744928" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/SpringBoot_Challenge03_RyanSousa$UserServiceTest.ic" NAME="UserServiceTest Coverage Results" MODIFIED="1699639379471" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.compassuol.sp.msusers.service.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/SpringBoot_Challenge03_RyanSousa$NotificationServiceTest.ic" NAME="NotificationServiceTest Coverage Results" MODIFIED="1699625768994" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.compassuol.sp.msnotification.service.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/SpringBoot_Challenge03_RyanSousa$AuthorizationServiceTest.ic" NAME="AuthorizationServiceTest Coverage Results" MODIFIED="1699637970215" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.compassuol.sp.msusers.service.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/SpringBoot_Challenge03_RyanSousa$java_in_ms_notification.ic" NAME="java in ms-notification Coverage Results" MODIFIED="1699626479838" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/SpringBoot_Challenge03_RyanSousa$msnotification_in_ms_notification.ic" NAME="msnotification in ms-notification Coverage Results" MODIFIED="1699626500444" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/SpringBoot_Challenge03_RyanSousa$NotificationProducerTest.ic" NAME="NotificationProducerTest Coverage Results" MODIFIED="1699637814334" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.compassuol.sp.msusers.service.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/SpringBoot_Challenge03_RyanSousa$NotificationTest.ic" NAME="NotificationTest Coverage Results" MODIFIED="1699626439437" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.compassuol.sp.msnotification.model.*</FILTER>
+    </SUITE>
   </component>
 </project>
