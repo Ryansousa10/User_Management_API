@@ -160,10 +160,8 @@ Open the project in IntelliJ.
 Build the project to download dependencies.
 Configure Databases:
 
-3. Set up MySQL and MongoDB databases and update application properties.
-Run the Application:
+3. **Set up MySQL and MongoDB databases and update application properties.**<br> <br> *MySQL authentication = user: "root", password: "root". <br> MongoDB = NO AUTHENTICATION*
 
-4. Start the application from IntelliJ or using the terminal.
-Make Requests:
+5. **Start the application from IntelliJ or using the terminal.**
 
-5. Use your preferred API client (e.g., Postman) to make requests to the specified endpoints.
+6. **Use your preferred API client (e.g., Postman) to make requests to the specified endpoints.**
