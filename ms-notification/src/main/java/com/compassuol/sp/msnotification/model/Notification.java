@@ -9,7 +9,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 import java.time.Instant;
 
 @Data
-@Document
+@Document(collection = "db_notification")
 @TypeAlias("notification")
 public class Notification {
 

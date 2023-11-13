@@ -5,78 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="75b34d1c-88c7-45d4-9337-58fbf1d3e73d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/4/04afba69b6daf8dba6362efb05084fc830242c85" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/8/187765def74c3f3201c1da8b471228fe97e0b20d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/a/1a80b915e81d533fd956bcd426183ab2dee90711" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/1/21d806ced5e5b1ccf5c5703fb774249fd14dfb17" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/a/3ac212c26117573c21fa783e03cd35c91c146689" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/7/57c8dea69dd26e99877cd9bd302066bd651dcebe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/a/5a25736bcd8f536c41030b0ebb7ac7c20be3a2c3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/0/709ac0a313cef9e612d3cda850e5492d552ffaee" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/1/71b773f9f487450365c6f574bc8fc4d0791455fd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/1/91aee88d0ce43751478c8ecc26d9d577baefdf1d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/f/9f04de111e6150964470cad8e6db59b66f89b9fa" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/e/aeba97308def960e4b23d8176fcf0cd3a610fadc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/5/b5d54e95ef6fb428161a4b85be7cc26451f7da3e" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/0/c0d83bf91f2849c4a741d5db27b8ecb88d519cb2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/2/c289c733fd297db1d3ae478dd46833d8c83f0763" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/c/ccc2462935eddcae9c7b6126a0bfba09e0d76040" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/5/d5913b49abb0b03670f51005efc22fa27c44d5b4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/6/d68784251e377de0492affd4d4e2f2f60f58d23b" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/9/d9021468d703f6e0bcfbe6f59e185df7faeaf213" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/0/e0f46ba961883cadf8b4606900036a7d5085d2af" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/3/e32b242f898b43586b3e473d6b18a78c6802735c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/1/f15092c3e90d697efe3354dbad4468764db51577" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/0/4/04afba69b6daf8dba6362efb05084fc830242c85" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/1/8/187765def74c3f3201c1da8b471228fe97e0b20d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/1/a/1a80b915e81d533fd956bcd426183ab2dee90711" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/2/1/21d806ced5e5b1ccf5c5703fb774249fd14dfb17" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/3/a/3ac212c26117573c21fa783e03cd35c91c146689" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/5/7/57c8dea69dd26e99877cd9bd302066bd651dcebe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/5/a/5a25736bcd8f536c41030b0ebb7ac7c20be3a2c3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/7/0/709ac0a313cef9e612d3cda850e5492d552ffaee" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/7/1/71b773f9f487450365c6f574bc8fc4d0791455fd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/9/1/91aee88d0ce43751478c8ecc26d9d577baefdf1d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/9/f/9f04de111e6150964470cad8e6db59b66f89b9fa" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/a/e/aeba97308def960e4b23d8176fcf0cd3a610fadc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/b/5/b5d54e95ef6fb428161a4b85be7cc26451f7da3e" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/c/0/c0d83bf91f2849c4a741d5db27b8ecb88d519cb2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/c/2/c289c733fd297db1d3ae478dd46833d8c83f0763" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/c/c/ccc2462935eddcae9c7b6126a0bfba09e0d76040" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/d/5/d5913b49abb0b03670f51005efc22fa27c44d5b4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/d/6/d68784251e377de0492affd4d4e2f2f60f58d23b" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/d/9/d9021468d703f6e0bcfbe6f59e185df7faeaf213" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/e/0/e0f46ba961883cadf8b4606900036a7d5085d2af" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/e/3/e32b242f898b43586b3e473d6b18a78c6802735c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/f/1/f15092c3e90d697efe3354dbad4468764db51577" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ms-notification/src/main/resources/static/swagger/ms-notification.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ms-notification/src/test/java/com/compassuol/sp/msnotification/model/NotificationTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ms-notification/src/test/java/com/compassuol/sp/msnotification/service/NotificationConsumerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ms-notification/src/test/java/com/compassuol/sp/msnotification/service/NotificationServiceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ms-users/src/test/java/com/compassuol/sp/msusers/config/SecurityFilterTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ms-users/src/test/java/com/compassuol/sp/msusers/payload/NotificationPayloadTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ms-users/src/test/java/com/compassuol/sp/msusers/service/AuthorizationServiceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ms-users/src/test/java/com/compassuol/sp/msusers/service/NotificationProducerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ms-users/src/test/java/com/compassuol/sp/msusers/service/UserMapperTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/3a1640fb-6f44-4ae2-8435-5a0aaafe16b1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/3a1640fb-6f44-4ae2-8435-5a0aaafe16b1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/723ce0ae-d729-4a2d-aa11-c0189f1b938f.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/723ce0ae-d729-4a2d-aa11-c0189f1b938f.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-notification/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ms-notification/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-notification/src/main/java/com/compassuol/sp/msnotification/MsNotificationApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-notification/src/main/java/com/compassuol/sp/msnotification/MsNotificationApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-notification/src/main/java/com/compassuol/sp/msnotification/payload/NotificationPayload.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-notification/src/main/java/com/compassuol/sp/msnotification/payload/NotificationPayload.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-notification/src/main/java/com/compassuol/sp/msnotification/service/NotificationConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-notification/src/main/java/com/compassuol/sp/msnotification/service/NotificationConsumer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-notification/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ms-notification/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-notification/src/test/java/com/compassuol/sp/challenge03/Challenge03ApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-notification/src/test/java/com/compassuol/sp/msnotification/Challenge03ApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-users/src/main/java/com/compassuol/sp/msusers/service/NotificationProducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-users/src/main/java/com/compassuol/sp/msusers/service/NotificationProducer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-users/src/main/java/com/compassuol/sp/msusers/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-users/src/main/java/com/compassuol/sp/msusers/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-users/src/main/java/com/compassuol/sp/msusers/util/JwtTokenProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-users/src/main/java/com/compassuol/sp/msusers/util/JwtTokenProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-users/src/test/java/com/compassuol/sp/msusers/service/UserServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-users/src/test/java/com/compassuol/sp/msusers/service/UserServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-users/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ms-users/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-users/src/main/resources/db/migration/V1__Create_Table.sql" beforeDir="false" afterPath="$PROJECT_DIR$/ms-users/src/main/resources/db/migration/V1__Create_Table.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,6 +30,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
 }</component>
@@ -102,35 +41,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;dev&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Projetos/SpringBoot_Challenge03_RyanSousa/ms-notification/src/main/resources&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "D:/Projetos/SpringBoot_Challenge03_RyanSousa/ms-notification/src/main/resources",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;,
-      &quot;mongo&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql",
+      "mongo"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Projetos\SpringBoot_Challenge03_RyanSousa\ms-notification\src\main\resources" />
@@ -142,7 +81,7 @@
       <command value="mvn clean install" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.msusers in ms-users">
+  <component name="RunManager" selected="Spring Boot.MsNotificationApplication">
     <configuration name="MsUsersApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ms-users" />
       <extension name="coverage">
@@ -250,6 +189,7 @@
       <workItem from="1699577880783" duration="96000" />
       <workItem from="1699620129897" duration="17164000" />
       <workItem from="1699638837882" duration="1262000" />
+      <workItem from="1699901564510" duration="261000" />
     </task>
     <servers />
   </component>
